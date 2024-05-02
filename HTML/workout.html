@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workout</title>
+    <link rel="stylesheet" type="text/css" href="workout.css">
+</head>
+<body>
+    <div class="workout-container">
+        <div class="wrapper">
+            <div class="exercise-details" id="exerciseDetails">
+                <!-- Exercise details will be added here -->
+                <button id="next-button">Next</button>
+            </div>
+            <div class="timer-box" id="timerDetails">
+                <div>
+                    <label>Enter amount of sets</label>
+                    <input type="number" id="amountSets">
+                </div>
+
+                <div>
+                    <label>Enter exercise time</label>
+                    <input type="number" id="exerciseTime">
+                </div>
+
+                <div>
+                    <label>Enter pause Time</label>
+                    <input type="number" id="pauseTime">
+                </div>
+
+                <button onclick="startTimer()">Start Timer</button>
+                <button onclick="togglePauseResume()">Pause/Resume</button>
+
+                <div>
+                    Status: <span id="display">Ready</span>
+                </div>
+                <p>Current set: <span id="currentSet">0</span></p>
+                <p>Time left: <span id="timeLeft">0</span></p>
+            </div>
+        </div>
+        <div class="exercise-row" id="imageContainerBottom">
+            <!-- Exercise containers will be added here -->
+        </div>
+        <div class="workout-details" id="workoutDetails">
+            <!-- Chosen workout and its exercises will be added here -->
+        </div>
+    </div>
+<script src="workout.js" type="module"></script>
+<script src="../timer/timer.js"></script>
+</body>
+</html>

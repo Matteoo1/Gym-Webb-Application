@@ -1,0 +1,120 @@
+
+.workout-container {
+    flex: 1 1 calc(25% - 20px); /* This ensures each box takes up 25% width minus some margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding: 2rem 0;
+    margin: 10px; /* Added margin to separate the boxes */
+}
+.workout-name {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#workoutList {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+    justify-content: center; /* Centers the boxes */
+}
+
+.workout-box {
+
+    min-width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+    overflow-y: scroll; /* Add a vertical scrollbar */
+    max-height: 250px; /* Set a maximum height to activate the scrollbar */
+}
+.workout-box::-webkit-scrollbar {
+    width: 6px; /* Set the width of the scrollbar */
+}
+
+.workout-box::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background color */
+}
+
+.exercise-container {
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+}
+
+h4 {
+    background-color: #50AF70;
+    color: white;
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+#pre-planned {
+    max-width: 10%;
+}
+
+.exercise-details p {
+    font-size: 16px; /* Adjust font size */
+    margin: 0; /* Remove default margin to control spacing */
+}
+
+.small-image {
+    max-width: 100px;
+    height: auto;
+    margin: 5px;
+}
+
+#imageContainerBottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+#total-info {
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 190px;
+}
+
+.details-button,.workout-button, .start-button, .remove-button, #pre-planned{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #50AF70; /* A standard green color */
+    color: #fff;
+    cursor: pointer;
+    margin: 4px; /* Space between buttons */
+    transition: background-color 0.3s; /* Transition effect */
+    font-size: 0.8vw;
+}
+
+.start-button {
+    background-color: #4CAF50; /* A different shade of green for "Start" button */
+}
+
+.remove-button {
+    background-color: #f44336; /* A red color for "Remove" button */
+}
+
+.workout-button:hover, .start-button:hover, .remove-button:hover {
+    background-color: #367a4f; /* A darker green for hover effect */
+}
+
+.exercise-details {
+    flex-grow: 1;
+    
+}

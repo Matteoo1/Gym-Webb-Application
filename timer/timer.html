@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="timer.css" rel="stylesheet" type="text/css">
+    <title>Timer</title>
+</head>
+
+<body>
+<div>
+    <label>Enter amount of sets:</label>
+    <input type="number" id="amountSets">
+</div>
+
+<div>
+    <label>Exercise time:</label>
+    <input type="number" id="exerciseTime">
+</div>
+
+<div>
+    <label>Pause Time (2nd Set)</label>
+    <input type="number" id="pauseTime">
+</div>
+
+<button onclick="startTimer()">Start Timer</button>
+<button onclick="togglePauseResume()">Pause/Resume</button>
+
+<div>
+    Status: <span id="display">Ready</span>
+</div>
+<p>Current set: <span id="currentSet">0</span></p>
+<p>Time left: <span id="timeLeft">0</span></p>
+
+<script src="timer.js"></script>
+</body>
+
+</html>

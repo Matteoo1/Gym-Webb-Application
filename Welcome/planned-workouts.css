@@ -1,0 +1,47 @@
+.workout-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    padding: 2rem 0;
+}
+
+.workout-box {
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h4 {
+    background-color: #50AF70;
+    color: white;
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.exercise-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.exercise {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.exercise-info {
+    margin-left: 1rem;
+}
+
+.navigation {
+    background: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+}

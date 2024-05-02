@@ -1,0 +1,181 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+h2 {
+    text-align: left;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Styles for the XPERT logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styles for the navbar links */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    padding: 0 .40rem;
+    margin: 0;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.navbar-links a:visited {
+    color: white;
+}
+
+.navbar-links a:hover {
+    box-shadow: inset 100px 0 0 0 #50AF70;
+    color: white;
+}
+
+/* HEADER */
+
+.welcome-header {
+    background-image: url("pictures/Ggym.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.get-started-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.get-started-button:hover {
+    background-color: #409060; /* Change to a slightly darker color on hover */
+    color: white;
+}
+
+/* Container: Easier flexbox, keeps information in between header and footer */
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+}
+
+/*Currently showing the date*/
+
+.today-workout {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* Style for the box */
+.box {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+    min-width: 300px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.rectangular-picture {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Display hamburger and hide navbar-links by default */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        padding-bottom: 10px;
+        left: 0;
+        background-color: black;
+    }
+
+    /* When active class is applied, show the links */
+    .navbar-links.active {
+        display: flex;
+        text-align: right;
+    }
+
+    .navbar-links a {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Content boxes */
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 20px 0;
+    }
+}
